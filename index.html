@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jual Beli Hewan Qurban - D2 FARM SOLUTION</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">D2 FARM SOLUTION</div>
+  <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#katalog">Katalog</a></li>
+      <li><a href="#carapesan">Cara Pesan</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="beranda">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Jual Beli Hewan Qurban Kambing & Sapi</h1>
+    <p>Mudah, Aman, dan Terpercaya untuk Qurban Anda</p>
+    <a href="#katalog" class="cta-btn">Lihat Katalog</a>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature-item">
+    <h3>Harga Bersaing</h3>
+    <p>Hewan ternak dengan harga terbaik dan transparan.</p>
+  </div>
+  <div class="feature-item">
+    <h3>Hewan Sehat & Bersertifikat</h3>
+    <p>Setiap hewan telah melalui pemeriksaan kesehatan.</p>
+  </div>
+  <div class="feature-item">
+    <h3>Proses Syariah</h3>
+    <p>Memastikan qurban sesuai syariat Islam.</p>
+  </div>
+  <div class="feature-item">
+    <h3>Pengiriman Nasional</h3>
+    <p>Pengiriman hewan ke seluruh wilayah Indonesia.</p>
+  </div>
+</section>
+
+<section class="catalog" id="katalog">
+  <h2>Katalog Hewan Qurban</h2>
+  <div class="filter-bar">
+    <label for="filterJenis">Jenis:</label>
+    <select id="filterJenis" onchange="filterCatalog()">
+      <option value="all">Semua</option>
+      <option value="kambing">Kambing</option>
+      <option value="sapi">Sapi</option>
+    </select>
+  </div>
+  <div id="catalog-list" class="catalog-list">
+    <!-- Hewan akan ditampilkan di sini -->
+  </div>
+</section>
+
+<section class="order-info" id="carapesan">
+  <h2>Cara Pesan</h2>
+  <ol>
+    <li>Pilih hewan qurban dari katalog kami.</li>
+    <li>Isi formulir pemesanan dan lakukan pembayaran.</li>
+    <li>Terima konfirmasi dan pelacakan pesanan Anda.</li>
+    <li>Terima laporan penyembelihan dan distribusi qurban.</li>
+  </ol>
+</section>
+
+<section class="about" id="tentang">
+  <h2>Tentang D2 FARM SOLUTION</h2>
+  <p>D2 FARM SOLUTION hadir untuk memudahkan jual beli hewan qurban dengan transparansi dan profesionalisme.</p>
+</section>
+
+<section class="blog" id="blog">
+  <h2>Blog & Edukasi</h2>
+  <p>Informasi terbaru dan tips seputar qurban dan hewan ternak.</p>
+</section>
+
+<section class="contact" id="kontak">
+  <h2>Kontak Kami</h2>
+  <form id="contactForm" onsubmit="return submitContactForm()">
+    <label for="name">Nama:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Pesan:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="formResponse"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
